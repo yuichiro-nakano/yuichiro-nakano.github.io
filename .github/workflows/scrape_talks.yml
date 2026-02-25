@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write           # This workflow pushes to the repository
+      pages: write
+      id-token: write
 
     steps:
     - uses: actions/checkout@v2
