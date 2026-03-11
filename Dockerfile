@@ -5,7 +5,15 @@ FROM ruby:3.2
 RUN apt-get update && apt-get install -y \
     build-essential \
     nodejs \
+    python3 \
+    python3-pip \
+    python3-venv \
+    curl \
     && rm -rf /var/lib/apt/lists/*
+
+# Install Poetry (as root, then make available system-wide)
+ENV POETRY_HOME=/usr/local
+RUN curl -sSL https://install.python-poetry.org | python3 -
 
 
 # Create a non-root user with UID 1000

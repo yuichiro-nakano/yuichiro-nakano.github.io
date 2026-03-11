@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "markdown-generator"
+version = "0.1.0"
+description = "BibTeX to Markdown generator for academicpages"
+authors = []
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pybtex = "0.25.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

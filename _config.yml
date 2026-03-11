@@ -74,7 +74,7 @@ author:
   steam            : # Username
   telegram         : # URL
   tumblr           : # Username
-  twitter          : # "https://x.com/NakanoYu200"
+  twitter          : "https://x.com/NakanoYu200"
   vine             : # Username
   weibo            : # Username
   wikipedia        : # Username
@@ -82,12 +82,17 @@ author:
   youtube          : # Username
   zhihu            : # Username
 
+# Author name to bold in publication author lists
+highlight_author: "Yuichiro Nakano"
+
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
   books:
     title: 'Books'
-  manuscripts:
-    title: 'Journal Articles'    
+  journal:
+    title: 'Peer-reviewed'
+  unpublished:
+    title: 'Preprint'
   conferences:
     title: 'Conference Papers'
 
